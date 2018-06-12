@@ -15,10 +15,28 @@ var time = [mat, night];
 
 var prices = [type, age, time];
 
-  console.log(type[1] + age[2] + time[1]);
-
-
-var age = new Price[7,8,10,20]
-function Price(movie, age, time) {
-  this.movie =
+function Ticket(movie, type, time, date) {
+  this.movie = movie;
+  this.type = type;
+  this.time = time;
+  this.date = date;
 }
+function resetFields() {
+  $("input#movie-name").val();
+  $("input#ticket-type").val();
+  $("input#ticket-time").val();
+  $("input#ticket-date").val();
+}
+
+
+$("form#ticket-form").submit(function(event) {
+  event.preventDefault();
+
+  var movieinput = $("input#movie-name").val();
+  var typeinput = $("input#ticket-type").val();
+  var timeinput = $("input#ticket-time").val();
+  var dateinput = $("input#ticket-date").val();
+
+  var newTicket = new Ticket(movieinput, typeinput, timeinput, dateinput);
+
+});
