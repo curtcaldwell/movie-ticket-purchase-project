@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Movie Tickets</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Tickets</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Your best place for tickets!</h2>
+        <form id="ticket-form">
+          <div class="radio">
+            <br>
+            <h4>Choose your movie</h4>
+            <label for="movie-name">
+              <input type="radio" name="m" id="movie-name">
+              Gladiator
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="m" id="movie-name" value="3D">
+              Jay and Silent Bob Strike Back 3D (5.00)
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="m" id="movie-name">
+              The Departed
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="m" id="movie-name">
+              The Interview
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="m" id="movie-name">
+              Toy Story 3
+            </label>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="ticket-type">
+              <option value="youth">Youth ($7.00)</option>
+              <option value="student">Student ($8.00)</option>
+              <option value="adult">Adult ($10.00)</option>
+              <option value="senior">Senior ($20.00)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="ticket-time">
+              <option value="mat">12:30PM</option>
+              <option value="night">6:30PM</option>
+              <option value="night">8:30PM</option>
+              <option value="night">10:30PM</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="ticket-date">Which date?</label>
+            <input type="date" class="form-control" id="ticket-date">
+          </div>
+          <div class="form-group">
+            <label for="rating">Number of tickets (1-10)</label>
+            <input type="range" list="tickmarks" class="form-control" min="1" max="10">
+
+            <datalist id="tickmarks">
+              <option value="1" label="1">
+                <option value="2" label="2">
+                  <option value="3" label="3">
+                    <option value="4" label="4">
+                      <option value="5" label="5">
+                        <option value="6" label="6">
+                          <option value="7" label="7">
+                            <option value="8" label="8">
+                              <option value="9" label="9">
+                                <option value="10" label="10">
+                                </datalist>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </body>
+                    </html>
