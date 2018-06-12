@@ -1,0 +1,15 @@
+#show-ticket {
+  display: none;
+}
+
+.ticket {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.ticket:hover {
+  text-decoration: underline;
+}
+body{
+  background-color: rgba(0, 0, 0, 0.1);
+}
